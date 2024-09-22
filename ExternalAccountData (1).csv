@@ -1,0 +1,31 @@
+COUNTRY_ID,COUNTRY,COUNTRY_PARENT,COUNTRY_TYPE
+1,France,600,C
+2,Germany,600,C
+3,United States,100,C
+4,Canada,100,C
+5,Austria,700,C
+6,Italy,700,C
+7,Netherlands,500,C
+8,Switzerland,600,C
+9,United Kingdom,600,C
+10,Sweden,500,C
+11,Japan,400,C
+12,Taiwan,400,C
+13,Korea,400,C
+14,China,400,C
+15,India,400,C
+16,Australia,400,C
+17,Belgium,600,C
+18,Denmark,500,C
+19,Spain,700,C
+20,Mexico,100,C
+21,Brazil,100,C
+22,Finland,500,C
+23,Singapore,400,C
+100,Americas,1000,R
+400,Asia Pacific,1000,R
+500,Northern Europe,2000,R
+600,Central Europe,2000,R
+700,Southern Europe,2000,R
+1000,ACT-5110,5000,A
+2000,ACT-6220,5000,A

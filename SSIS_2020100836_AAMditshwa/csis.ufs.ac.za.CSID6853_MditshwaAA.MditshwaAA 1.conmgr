@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="csis.ufs.ac.za.CSID6853_MditshwaAA.MditshwaAA 1"
+  DTS:DTSID="{EA012315-17B3-425E-B86B-62A84AF17206}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=csis.ufs.ac.za;User ID=MditshwaAA;Initial Catalog=CSID6853_MditshwaAA;Provider=SQLNCLI11.1;Application Name=SSIS-Package2-{EA012315-17B3-425E-B86B-62A84AF17206}csis.ufs.ac.za.CSID6853_MditshwaAA.MditshwaAA;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAilmrdg5pLEuI+m7OrPIbmQAAAAACAAAAAAAQZgAAAAEAACAAAABsvbGuEEWg2cjWUsIb0lHJm7fuM/PK9GXC8cX0hFtD2QAAAAAOgAAAAAIAACAAAABf4YjheHL9ALk6D2Osdt3lsiVL+ds4kfpbYyTJL5dsSYAAAABf1xEEeQtqG1IRLZ2xwb2SJyEE7fV4Z2JAPndG7eBRNwafxVVvNSpOPSrs2wUtnqSHeqJTsDm+EPEwxtQYZXqlMCm21lPdabs1edLfWwVfzNp8OPGIcih2sjZ3g2T5XDDNS9R5BqfNVfv9XraQJjNVhssPiMUtenYHdxcY7iVl0kAAAAD0QjSsiJ9qBAPKUKzMddHLFo5g373Ct7fZk9B7I/i86xc3ir721UPa1KssUVCsK64e3DR+r9Oc2g7zbLeUTH90</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

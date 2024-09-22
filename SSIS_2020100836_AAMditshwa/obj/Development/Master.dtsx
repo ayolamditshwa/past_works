@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/1/2024 2:06:44 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MCF7947NAS"
+  DTS:CreatorName="MCF7947NAS\CSIS"
+  DTS:DTSID="{3729BEEE-2FEF-49DF-B262-A79F6C060107}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{D5F5A461-E12E-4227-BE21-DC9FA075E2FC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[csis.ufs.ac.za.CSID6853_MditshwaAA.MditshwaAA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{38D310F3-D4E8-44AB-81F1-D236EB4F2A51}"
+      DTS:ObjectName="csis.ufs.ac.za.CSID6853_MditshwaAA.MditshwaAA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=csis.ufs.ac.za;User ID=MditshwaAA;Initial Catalog=CSID6853_MditshwaAA;Provider=SQLNCLI11.1;Application Name=SSIS-Package-{38D310F3-D4E8-44AB-81F1-D236EB4F2A51}csis.ufs.ac.za.CSID6853_MditshwaAA.MditshwaAA;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAilmrdg5pLEuI+m7OrPIbmQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABErIw+n5UONMO5JR9Z88frlRbocRv07XVDYXv+S7l4GAAAAAAOgAAAAAIAACAAAACsxsCJbIWM1eClhBPuYUq1/cB7rhnvUY82e36eRqI52SAAAADgW3NG1DpaR1UxH9Lu3bV3r3HYRsNxmuehLnIkzjYGy0AAAABWKNUTvWHXa0LKpkVi/sM0kFKWiH3qtJa3J/MxY/YelX1ZgCbGkTeA/DlVnfAE/8OY7Nz0F0IeeT6nYo1zHjZ1</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute Package Task"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{73317833-3485-4A4C-9957-16F4CB61FC2A}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Package Task"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>LoadDimensions.dtsx</PackageName>
+          <PackagePassword
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAilmrdg5pLEuI+m7OrPIbmQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAJBpBRmcCDExUPS1voS+H8J+ALiTykjJ2kfvbJ0r+jCwAAAAAOgAAAAAIAACAAAAAVOiRGm7Aq7/25C1Fj4U8nxB3T9mWyGs/qOkeso7r7aSAAAAAjFZ/hO8oMZvZ6ULOnJg/q6UgSMIOgTajfVKXLITHb1UAAAABAM/fU6u5eKmF/ISihydPC5xewAPDcmuqV2kYFHSSe6ARsGum25eUdx7QVdhyYlmk1bsXWYhvyAnjh/jwegqLy</PackagePassword>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute Package Task 1"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{13D953D3-F63F-430E-8EE5-FC1D690BC011}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Package Task 1"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>LoadDimensions.dtsx</PackageName>
+          <PackagePassword
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAilmrdg5pLEuI+m7OrPIbmQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABOjnoynnoQptWVZ78F7xCFEp0G8i6RJgKfg8g0fcI75AAAAAAOgAAAAAIAACAAAACX5J7RHeDzYG/1aL9pb6HdCbc31PFo0QQhNoeecSY/QCAAAADg8hqX3tQCVoArtFQu34qpQQuCenzROOfUNPLk51uZ/EAAAABTogbrafqi07Aq8SXdGxxKgJ3xTffKjBTMnhi0r8WfX2aV9dbgB1/w35urO+X1rc5nLu0p854SEVzd01S7tP+e</PackagePassword>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{958D31E0-A176-4B27-AE46-20A721B7C24F}"
+      DTS:From="Package\Execute Package Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Execute Package Task 1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Execute Package Task"
+          TopLeft="232,47" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Execute Package Task 1"
+          TopLeft="452,185" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="327.5,89">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="224.5,96"
+              Start="0,0"
+              End="224.5,88.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,44"
+                    Point2="0,48"
+                    Point3="4,48" />
+                  <mssgle:LineSegment
+                    End="220.5,48" />
+                  <mssgle:CubicBezierSegment
+                    Point1="220.5,48"
+                    Point2="224.5,48"
+                    Point3="224.5,52" />
+                  <mssgle:LineSegment
+                    End="224.5,88.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
